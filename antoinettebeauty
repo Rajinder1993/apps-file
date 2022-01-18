@@ -1,0 +1,16 @@
+{% assign store_url= 'https://www.antoinettebeauty.com/' %}
+
+
+    $.ajax({
+    type: 'POST',
+    url: 'https://www.antoinettebeauty.com/Apps/emailpost.php',
+    data:  { email:emil,date:output},
+    success: function(result) {
+    var numItems = $('.blank').length;
+    console.log(numItems);
+
+    },
+    error: function() {
+    alert('Some error found. Please try again!');
+    }
+    });
